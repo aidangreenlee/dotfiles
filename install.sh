@@ -2,13 +2,10 @@
 
 dir=$(pwd)
 
-mkdir -p ~/.config/rofi
+ln -sfn $dir/rofi/ ~/.config/rofi
 
-ln -s $dir/rofi/config ~/.config/rofi/config
-ln -s $dir/rofi/aidan.rasi ~/.config/rofi/aidan.rasi
+ln -sf $dir/.vimrc ~/.vimrc
 
-ln -s $dir/.vimrc ~/.vimrc
+ln -sf $dir/.bashrc ~/.bashrc
 
-ln -s $dir/.bashrc ~/.bashrc
-
-ln -s $dir/.tmux.conf ~/.tmux.conf
+ln -sf $dir/.tmux.conf ~/.tmux.conf
