@@ -1,4 +1,4 @@
-rofi.theme: ~/.config/rofi/aidan.rasi
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
 rofi.combi-modi:	drun
 rofi.modi:	drun
 rofi.font:	FreeMono Bold 16
