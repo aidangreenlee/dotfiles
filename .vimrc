@@ -11,13 +11,6 @@ set undodir=~/.vim/undo
 set tabstop=4
 set whichwrap+=<,>,h,l,[,]
 
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
 set shiftwidth=4
 set autoindent
 set cindent
