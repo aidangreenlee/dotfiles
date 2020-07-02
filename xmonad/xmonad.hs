@@ -300,6 +300,10 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((0, 0x1008FF17),
      spawn "playerctl next")
 
+	-- Flameshot.
+	, ((0, xK_Print),
+			spawn "flameshot gui")
+
   --------------------------------------------------------------------
   -- "Standard" xmonad key bindings
   --

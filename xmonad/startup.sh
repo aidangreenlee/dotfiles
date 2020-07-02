@@ -17,6 +17,11 @@ if [ -z "$(pgrep xfce4-power-manager)" ] ; then
     xfce4-power-manager &
 fi
 
+# Notifications
+if [ -z "$(pgrep xfce4-notifyd)" ] ; then
+   systemctl --user start xfce4-notifyd  &
+fi
+
 # Taffybar
 # if [ -z "$(pgrep taffybar)" ] ; then
 #     taffybar &
@@ -59,6 +64,11 @@ fi
 # Polybar
 if [ -z "$(pgrep polybar)" ] ; then
     bash ~/.config/polybar/launch.sh &
+fi
+
+# Flameshot
+if [ -z "$(pgrep flameshot)" ] ; then
+    flameshot &
 fi
 
 # xbindkeys
