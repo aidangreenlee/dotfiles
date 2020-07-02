@@ -1,0 +1,5 @@
+#!/bin/sh
+~/.fehbg
+if [ "$(pgrep bspwm)" ] ; then
+	bspc config -m eDP1 top_padding 0
+fi
