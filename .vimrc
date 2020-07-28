@@ -1,3 +1,17 @@
+"""VUNDLE
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"""""Plugins
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'hashivim/vim-terraform'
+
+call vundle#end()
+filetype plugin indent on
+
 """""""""""""""""""""""""""FORTRAN
 let fortran_free_source=1
 let fortran_do_enddo=1
@@ -11,6 +25,7 @@ set ignorecase
 set smartcase
 """""""""""""""""""""""""""FORTRAN
 colorscheme default
+set paste
 set number
 syntax on
 
