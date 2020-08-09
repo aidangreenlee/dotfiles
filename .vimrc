@@ -25,7 +25,6 @@ set ignorecase
 set smartcase
 """""""""""""""""""""""""""FORTRAN
 colorscheme default
-set paste
 set number
 syntax on
 
@@ -42,4 +41,6 @@ set shiftwidth=2
 set autoindent
 set cindent
 
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+set paste
+
+""let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
