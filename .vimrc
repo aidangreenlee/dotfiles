@@ -1,4 +1,5 @@
 """VUNDLE
+set shell=/bin/bash
 set nocompatible
 filetype off
 
@@ -8,6 +9,7 @@ call vundle#begin()
 """""Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'hashivim/vim-terraform'
+Plugin 'hashivim/vim-packer'
 
 call vundle#end()
 filetype plugin indent on
@@ -15,7 +17,6 @@ filetype plugin indent on
 """""""""""""""""""""""""""FORTRAN
 let fortran_free_source=1
 let fortran_do_enddo=1
-filetype plugin indent on
 set ruler
 set showcmd
 set smarttab

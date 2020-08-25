@@ -424,6 +424,28 @@ sed -i -e 's/HIGHLIGHT_BACKGROUND=.*/HIGHLIGHT_BACKGROUND="#F57F17"/g' $PDIR/scr
 # Restarting polybar
 $LAUNCH &
 
+elif  [[ $1 = "-custom" ]]; then
+# Replacing colors
+sed -i -e 's/bg = .*/bg = #FFFFFF/g' $PDIR/config.ini
+sed -i -e 's/fg = .*/fg = #FFFFFF/g' $PDIR/config.ini
+sed -i -e 's/fg-alt = .*/fg-alt = #454545/g' $PDIR/config.ini
+sed -i -e 's/acolor = .*/acolor = #FFFFFF/g' $PDIR/config.ini
+sed -i -e 's/txt = .*/txt = #2C2C2C/g' $PDIR/config.ini
+sed -i -e 's/shade1 = .*/shade1 = #F57F17/g' $PDIR/config.ini
+sed -i -e 's/shade2 = .*/shade2 = #F9A825/g' $PDIR/config.ini
+sed -i -e 's/shade3 = .*/shade3 = #FBC02D/g' $PDIR/config.ini
+sed -i -e 's/shade4 = .*/shade4 = #FDD835/g' $PDIR/config.ini
+sed -i -e 's/shade5 = .*/shade5 = #FFEB3B/g' $PDIR/config.ini
+sed -i -e 's/shade6 = .*/shade6 = #FFEE58/g' $PDIR/config.ini
+sed -i -e 's/shade7 = .*/shade7 = #FFF176/g' $PDIR/config.ini
+sed -i -e 's/shade8 = .*/shade8 = #FFF59D/g' $PDIR/config.ini
+sed -i -e 's/HIGHLIGHT_BACKGROUND=.*/HIGHLIGHT_BACKGROUND="#F57F17"/g' $PDIR/scripts/menu
+sed -i -e 's/HIGHLIGHT_BACKGROUND=.*/HIGHLIGHT_BACKGROUND="#F57F17"/g' $PDIR/scripts/menu_full
+sed -i -e 's/HIGHLIGHT_BACKGROUND=.*/HIGHLIGHT_BACKGROUND="#F57F17"/g' $PDIR/scripts/sysmenu
+sed -i -e 's/HIGHLIGHT_BACKGROUND=.*/HIGHLIGHT_BACKGROUND="#F57F17"/g' $PDIR/scripts/color-switch.sh
+# Restarting polybar
+$LAUNCH &
+
 else
 echo "Available options:
 -amber		-blue			-blue-grey		-brown

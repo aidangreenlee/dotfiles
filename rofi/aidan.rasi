@@ -54,6 +54,7 @@
 #button selected {
     border-color: @lightgreen;
     text-color: @lightgreen;
+		padding: 4px;
 }
 #inputbar {
     background-color: @blue;

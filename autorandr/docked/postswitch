@@ -1,0 +1,3 @@
+#!/bin/sh
+~/.fehbg
+~/.config/polybar/launch.sh
