@@ -43,12 +43,13 @@ bspc config top_monocle_padding  -25
 bspc config focus_follows_pointer true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Firefox desktop='^2'
 bspc rule -a discord desktop='^4'
 bspc rule -a Spotify desktop='^4'
 bspc rule -a Qalculate-gtk state=floating
+bspc rule -a Picture-in-Picture state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc rule -a Evince state=floating
 
 bspc config pointer_modifier mod1
 
